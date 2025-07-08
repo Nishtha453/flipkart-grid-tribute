@@ -4,46 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart Grid Tribute</title>
-  <link rel="icon" href="https://img.icons8.com/fluency/48/flipkart.png" />
+  <link rel="icon" href="images/icons8-flipkart-100.png" />
+
   <meta property="og:title" content="Flipkart Grid Tribute Page">
   <meta property="og:description" content="A cozy, aesthetic, interactive tribute to Flipkart Grid, crafted with care and color.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/Nishtha453/flipkart-grid-tribute/main/preview.png
-">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Nishtha453/flipkart-grid-tribute/main/preview.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Quicksand', sans-serif;
-      transition: background 0.5s ease, color 0.5s ease;
-    }
-    .font-hand {
-      font-family: 'Patrick Hand', cursive;
-    }
-    .dark body {
-      background-color: #1f2937;
-      color: #f3f4f6;
-    }
-    .quote-box {
-      border-left: 4px solid #FFC107;
-      padding-left: 1rem;
-      font-style: italic;
-      margin-top: 1rem;
-    }
-    .confetti-btn {
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-    section {
-      scroll-margin-top: 80px;
-      transition: all 0.4s ease-in-out;
-    }
-  </style>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -65,19 +32,31 @@
       }
     }
   </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 </head>
 <body class="bg-flipkartCream text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+
   <button onclick="document.documentElement.classList.toggle('dark')" class="fixed top-4 right-4 z-50 p-2 bg-white dark:bg-gray-700 rounded-full shadow">
     🌓
   </button>
+
   <nav class="fixed top-0 w-full bg-white shadow-md z-40 px-6 py-2 text-sm font-semibold">
     <ul class="flex gap-6 justify-center">
-    <li><a href="#hero" class="hover:text-flipkartBlue">Home</a></li>
-    <li><a href="#projects" class="hover:text-flipkartBlue">Projects</a></li>
-    <li><a href="#timeline" class="hover:text-flipkartBlue">Timeline</a></li>
-    <li><a href="#why" class="hover:text-flipkartBlue">Why Grid</a></li>
-  </ul>
+      <li><a href="#hero" class="hover:text-flipkartBlue">Home</a></li>
+      <li><a href="#projects" class="hover:text-flipkartBlue">Projects</a></li>
+      <li><a href="#timeline" class="hover:text-flipkartBlue">Timeline</a></li>
+      <li><a href="#why" class="hover:text-flipkartBlue">Why Grid</a></li>
+    </ul>
   </nav>
+
+  
   <div id="lottie-hero"></div>
 
   <!-- Hero Section -->
@@ -94,13 +73,13 @@
 
 
   </section>
-<!-- Introduction Section -->
+
   <section id="intro" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-cozyCocoa text-center mb-4">Introduction</h2>
     <p class="text-center text-lg">Flipkart Grid is where innovation meets opportunity. Every year, it brings together India's most inquisitive student minds to solve bold, real-world challenges. But to me — it's also a stage. A space where I found the courage to create, to compete, and to believe in engineering with empathy.</p>
   </section>
 
-  <!-- Tracks Section -->
+  
   <section id="tracks" class="py-16 px-6 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-center text-cozyCocoa mb-8">Tracks That Inspired Me</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -123,7 +102,7 @@
     </div>
   </section>
 
-    <!-- Projects I Built Section -->
+    
   <section id="projects" class="py-16 px-6 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-center text-cozyCocoa mb-8">Projects I Built</h2>
     <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -138,13 +117,13 @@
     </div>
   </section>
 
-  <!-- Why I Applied Section -->
+  
   <section id="why" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-center text-cozyCocoa mb-4">Why I Applied to Flipkart Grid</h2>
     <p class="text-center text-lg">To me, Flipkart Grid isn't just about competing. It’s about building for Bharat. I applied because I want to solve real user problems — at scale, with purpose. The Grid gave me the space to think beyond textbooks and imagine as a product engineer.</p>
   </section>
 
-  <!-- Timeline Section -->
+  
   <section id="timeline" class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-center text-cozyCocoa mb-6">My Flipkart Grid Timeline</h2>
     <ul class="space-y-4 text-lg">
@@ -158,7 +137,7 @@
     </ul>
   </section>
 
-  <!-- Highlight Box -->
+
   <section  class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-up">
     <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
       <p class="italic text-lg">“From recommendation engines to fraud detection models, Flipkart Grid doesn't just test skills — it reveals potential. Every prompt is a window into the real world. Every submission, a reflection of how we think.”</p>
@@ -166,61 +145,29 @@
     </div>
   </section>
 
-  <!-- Audio & Scripts (unchanged) -->
-  <audio id="click-sound" src="https://assets.mixkit.co/sfx/download/mixkit-select-click-1109.mp3"></audio>
-  <audio id="celebrate-sound" src="https://assets.mixkit.co/sfx/download/mixkit-game-level-completed-2059.mp3"></audio>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    document.addEventListener('keydown', (e) => {
-      if (e.key.toLowerCase() === 'g') {
-        alert('💡 Flipkart Grid Fun Fact: Grid 5.0 saw participation from over 3 lakh students!');
-        playSound('celebrate');
-      }
-    });
-    const heroAnim = lottie.loadAnimation({
-      container: document.getElementById('lottie-hero'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://lottie.host/f75b351a-8e0c-4a41-93e7-c9fe10ee4dc5/0Yz3xyxn5W.json'
-    });
-    let confetti;
-    function launchConfetti() {
-      if (!confetti) {
-        confetti = new ConfettiGenerator({ target: 'confetti-canvas' });
-        confetti.render();
-      } else {
-        document.getElementById('confetti-canvas').classList.remove('hidden');
-      }
-      setTimeout(() => {
-        document.getElementById('confetti-canvas').classList.add('hidden');
-      }, 5000);
-    }
-    function playSound(type) {
-      if (type === 'click') document.getElementById('click-sound').play();
-      if (type === 'celebrate') document.getElementById('celebrate-sound').play();
-    }
-  </script>
   
-
-
-  <!-- Final Reflection Section -->
   <section id="reflection" class="py-12 px-6 text-center max-w-3xl mx-auto">
     <h2 class="text-xl font-bold text-flipkartDeepBlue mb-4">What I Learned</h2>
     <p class="text-lg text-gray-800 dark:text-gray-200">Participating in Grid taught me that innovation isn’t just about code — it’s about context, people, and solving with empathy. I’m grateful for this journey.</p>
   </section>
 
+
+  <audio id="click-sound" src="https://assets.mixkit.co/sfx/download/mixkit-select-click-1109.mp3"></audio>
+  <audio id="celebrate-sound" src="https://assets.mixkit.co/sfx/download/mixkit-game-level-completed-2059.mp3"></audio>
+
+
   <footer class="bg-white dark:bg-gray-800 py-6 mt-12 border-t border-gray-300 dark:border-gray-700">
     <div class="max-w-4xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
-      <p>Designed with 💙 by Nishtha Gupta· © 2025</p>
+      <p>Designed with 💙 by Nishtha Gupta · © 2025</p>
       <p>
-        <a href="https://github.com/Nishtha453" class="text-flipkartBlue hover:underline" target="_blank">GitHub</a>
-        &nbsp;|&nbsp;
+        <a href="https://github.com/Nishtha453" class="text-flipkartBlue hover:underline" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/nishtha-gupta-a6a117209" class="text-flipkartBlue hover:underline" target="_blank">LinkedIn</a>
       </p>
     </div>
   </footer>
 
+ 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
